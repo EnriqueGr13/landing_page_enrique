@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page - Enrique Gallén Roda</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="imgs/fotocamara.jpg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Atomic+Age&family=Poetsen+One&family=Sedan+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+    <!-- BARRA DE NAVEGACIÓN -->
+    <header>
+        <img src="imgs/fotocamara.jpg" alt="imagen del logo">
+
+        <div class="bars">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#footer">Footer</a></li>
+                <li><a><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CABECERA -->
+    <section id="cabecera">
+        <div class="texto-cabecera">
+            <h1>Tendeta <br> Camareta</h1>
+            <p>Tu tienda de confianza para comprar los mejores productos fotográficos a nivel nacional</p>
+        </div>
+    </section>
+
+    <!-- SECCIÓN PRODUCTOS  -->
+    <section id="productos">
+        <h1>Productos</h1>
+        <p>Descubre nuestra selección de productos fotográficos de alta calidad.</p>
+        
+        <div class="contenedor-tarjetas">
+            <div class="tarjeta">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="imgs/camaraprof1.jpg" alt="imagen 1"></div>
+                        <div class="swiper-slide"><img src="imgs/camaraprof2.jpg" alt="imagen 2"></div>
+                        <div class="swiper-slide"><img src="imgs/camaraprof3.jpg" alt="imagen 3"></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <h2 class="titulo">Cámara Profesional <i class="fa-regular fa-star estrella"></i></h2>
+                <p class="descripcion">Una cámara de alta calidad para capturar momentos inolvidables.</p>
+                <button class="boton">Comprar</button>
+            </div>
+            
+            <div class="tarjeta">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="imgs/tripode1.jpg" alt="imagen 1"></div>
+                        <div class="swiper-slide"><img src="imgs/tripode2.jpg" alt="imagen 2"></div>
+                        <div class="swiper-slide"><img src="imgs/tripode3.jpg" alt="imagen 3"></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <h2 class="titulo">Trípode Ajustable <i class="fa-regular fa-star estrella"></i></h2>
+                <p class="descripcion">Perfecto para estabilidad en fotografía y video.</p>
+                <button class="boton">Comprar</button>
+            </div>
+
+            <div class="tarjeta">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="imgs/objetivo1.jpg" alt="imagen 1"></div>
+                        <div class="swiper-slide"><img src="imgs/objetivo2.jpg" alt="imagen 2"></div>
+                        <div class="swiper-slide"><img src="imgs/objetivo3.jpg" alt="imagen 3"></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <h2 class="titulo">Objetivo Gran Angular <i class="fa-regular fa-star estrella"></i></h2>
+                <p class="descripcion">Expande tu visión con un objetivo de alta calidad.</p>
+                <button class="boton">Comprar</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN CONTACTO  -->
+    <section id="contacto">
+        <h1>FORMULARIO DE CONTACTO</h1>
+
+        <form id="contacto-form">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+            <p id="nombre-error" class="invisible">Error en el nombre.</p>
+    
+            <label for="apellidos">Apellidos</label>
+            <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos">
+            <p id="apellidos-error" class="invisible">Error en los apellidos.</p>
+    
+            <label for="telefono">Teléfono</label>
+            <input type="tel" name="telefono" id="telefono" placeholder="Teléfono">
+            <p id="telefono-error" class="invisible">Error en el teléfono.</p>
+    
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="ejemplo@gmail.com">
+            <p id="email-error" class="invisible">Error en el email.</p>
+    
+            <label for="comentario">Comentario</label>
+            <textarea name="comentario" id="comentario" placeholder="Escribe tu mensaje"></textarea>
+            <p id="comentario-error" class="invisible">El comentario no puede estar vacío.</p>
+    
+            <button type="submit">Enviar</button>
+            <p id="exito-mensaje" class="invisible">¡ENVIADO CORRECTAMENTE^^!</p>
+        </form>
+    </section>
+
+    <!--  FOOTER  -->
+    <footer id="footer">
+        <div class="footer-contenedor">
+            <div class="footer-columna">
+                <h3>Tienda</h3>
+                <p><i class="fa-solid fa-location-dot"></i> Av. Valencia 1, Castellón, España</p>
+                <p><i class="fa-solid fa-phone"></i> +34 123 456 789</p>
+                <p><i class="fa-solid fa-envelope"></i> contacto@tendeta.com</p>
+            </div>
+    
+            <div class="footer-columna">
+                <h3>Productos</h3>
+                <ul>
+                    <li><a href="#productos">Cámara Profesional</a></li>
+                    <li><a href="#productos">Trípode Ajustable</a></li>
+                    <li><a href="#productos">Objetivo Gran Angular</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-columna">
+                <h3>Web</h3>
+                <ul>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a>Nosotros</a></li>
+                    <li><a>Ayuda</a></li>
+                    <li><a>FAQs</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="footer-redes">
+            <a><i class="fa-brands fa-instagram"></i></a>
+            <a><i class="fa-brands fa-facebook"></i></a>
+            <a><i class="fa-brands fa-x-twitter"></i></a>
+            <a><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+    <!-- BOTÓN SCROLL ARRIBA -->
+    <button id="scrollArriba" class="scroll-arriba">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/38e3c1fb00.js" crossorigin="anonymous"></script>
+</body>
+</html>

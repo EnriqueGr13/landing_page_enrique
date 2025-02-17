@@ -1,0 +1,399 @@
+/* --------- ESTILOS GENERALES --------- */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Quicksand", sans-serif;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* --------- ESTILOS BARRA DE NAVEGACIÓN --------- */
+header {
+    width: 100%;
+    height: 80px;
+    background-color: #005f73;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+header img {
+    width: 80px;
+    height: auto;
+    border-radius: 1px;
+}
+
+.bars {
+    display: none;
+}
+
+.nav-bar ul {
+    display: flex;
+}
+
+.nav-bar ul li a {
+    display: block;
+    color: #fdfcdc;
+    font-size: 18px;
+    padding: 10px 25px;
+    border-radius: 15px;
+    transition: 0.2s;
+    margin: 0 5px;
+}
+
+.nav-bar ul li a:hover,
+.nav-bar ul li a:active {
+    background-color: #f07167;
+    font-weight: bold;
+    transition: ease-in, 0.3s;
+}
+
+/* --------- ESTILOS CABECERA ---------  */
+#cabecera {
+    background-image: url("../imgs/imgCabecera.jpg");
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.texto-cabecera {
+    padding: 130px;
+}
+
+#cabecera h1 {
+    font-family: "Atomic Age", serif;
+    font-size: 100px;
+    color: #461220;
+}
+
+#cabecera p {
+    font-weight: bold;
+    color: #e8eddf;
+}
+
+/* --------- ESTILOS SECCIÓN PRODUCTOS --------- */
+#productos{
+    background-color: #fdfcdc;
+    padding-bottom: 100px;
+}
+
+#productos h1 {
+    font-family: "Atomic Age", serif;
+    font-size: 70px;
+    text-align: center;
+    padding-top: 100px;
+    color: #005f73;
+}
+
+#productos p {
+    text-align: center;
+    margin: 10px auto;
+}
+
+/* TARJETAS  */
+.contenedor-tarjetas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    height: 450px;
+    box-shadow: 0px 0px 5px #000;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #f1f7ee;
+    transition: transform 0.3s ease-in-out;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+}
+
+.swiper {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.titulo {
+    font-family: "Poetsen One", sans-serif;
+    color: #FF70A6;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.descripcion {
+    color: #000;
+    margin: 5px 0;
+}
+
+.boton {
+    border-radius: 30px;
+    background: #ff9b85;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    transition: 0.2s;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-family: "Poetsen One", sans-serif;
+}
+
+.boton:hover {
+    background-color: #ee6055;
+}
+
+/* ESTILOS CONTACTO */
+#contacto{
+    background-color: #caf0f8;
+    padding-bottom: 100px;
+}
+
+#contacto h1{
+    font-family: "Atomic Age", serif;
+    font-size: 70px;
+    text-align: center;
+    padding-top: 100px;
+    color: #005f73;
+}
+
+#contacto form {
+    padding: 20px;
+    width: 50%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 5px;
+}
+
+#contacto label {
+    font-weight: bold;
+}
+
+#contacto input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: none;
+}
+
+#contacto .invisible {
+    display: none;
+}
+
+#contacto .error {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 4px;
+    display: block;
+}
+
+#contacto .exito {
+    color: green;
+    font-size: 0.9em;
+    margin-top: 4px;
+    display: block;
+    text-align: end;
+    font-weight: bold;
+}
+
+#contacto div {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+#contacto input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+#contacto button {
+    padding: 10px;
+    background-color: #f07167;
+    border: 1px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-end;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+#contacto button:hover {
+    background-color: #ee6055;
+    transition: background-color 0.3s ease;
+}
+
+/* --------- FOOTER --------- */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-contenedor {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-columna {
+    max-width: 300px;
+}
+
+.footer-columna h3 {
+    margin-bottom: 15px;
+    color: #fdfcdc;
+}
+
+.footer-columna p, .footer-columna ul {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.footer-columna ul {
+    padding: 0;
+}
+
+.footer-columna ul li {
+    list-style: none;
+}
+
+.footer-columna ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-columna ul li a:hover {
+    color: #f07167;
+}
+
+.footer-redes {
+    margin-top: 20px;
+}
+
+.footer-redes a {
+    color: white;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.footer-redes a:hover {
+    color: #f07167;
+}
+
+/* Botón de scroll hacia arriba */
+.scroll-arriba {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #f07167;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.scroll-arriba:hover {
+    background-color: #ee6055;
+    transform: scale(1.1);
+}
+
+@media(max-width: 900px) {
+    /* --------- BARRA DE NAVEGACIÓN --------- */
+    header {
+        padding: 0px 30px;
+    }
+
+    .bars {
+        display: block;
+        cursor: pointer;
+    }
+
+    .bars .line {
+        width: 30px;
+        height: 3px;
+        background-color: #fdfcdc;
+        margin: 6px 0px;
+    }
+
+    .nav-bar {
+        height: 0px;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background-color: #005f73;
+        transition: 0.5s;
+        overflow: hidden;
+    }
+
+    .nav-bar.active {
+        height: 450px;
+    }
+
+    .nav-bar ul {
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .nav-bar.active ul {
+        opacity: 1;
+    }
+
+    .nav-bar ul li a {
+        margin-bottom: 20px;
+    }
+
+    /* --------- CABECERA --------- */
+    .texto-cabecera {
+        padding: 5vh;
+    }
+
+    #cabecera h1 {
+        font-size: 80px;
+    }
+
+    /* --------- TARJETAS RESPONSIVE --------- */
+    .contenedor-tarjetas {
+        flex-direction: column;
+        align-items: center;
+    }
+}
