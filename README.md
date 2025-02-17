@@ -1,9 +1,9 @@
 # landing_page_enrique
-##Descripción
+## Descripción
 
 Este proyecto es una landing page para Tendeta Camareta, una tienda en línea especializada en productos fotográficos. La página está diseñada con HTML, CSS y JavaScript e incluye elementos interactivos como un carrusel de imágenes con Swiper.js y un formulario de contacto validado en el frontend.
 
-##Características
+## Características
 
 - Diseño responsive para una experiencia óptima en diferentes dispositivos.
 
@@ -17,7 +17,7 @@ Este proyecto es una landing page para Tendeta Camareta, una tienda en línea es
 
 - Botón de scroll arriba para mejorar la usabilidad.
 
-##Tecnologías utilizadas
+## Tecnologías utilizadas
 
 - HTML5
 
