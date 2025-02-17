@@ -29,4 +29,4 @@ Este proyecto es una landing page para Tendeta Camareta, una tienda en línea es
 
 - FontAwesome (para iconos)
 
-###Realizado por Enrique Gallén Roda
+### Realizado por Enrique Gallén Roda
